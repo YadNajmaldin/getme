@@ -56,28 +56,31 @@ header li a:hover:before {
 /* index page */
 .container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     padding: 50px;
     background-color: white;
     box-shadow: 0 0 25px 0 black;
 
 }
-.container img {
-    height: 300px;
-    width: 300px;
+img {
+    height: 100%;
+    width: 100%;
 }
+
+
+
+.image {
+    height: 200px;
+    width: 250px;
+    margin-left: 70px;
+}
+
 .item {
     order: 5; 
     border: 1px solid rgba(0, 0, 0, 0.8);
     text-align: center;
 }
 
-.delete {
-    font-family: 'Abel', sans-serif;
-    background: ;
-    border-radius: 5px;
-    border-color: rgb(153, 3, 28);
-}
 .delete input[type="submit"]{
     font-family: 'Abel', sans-serif;
     width: 13%;
