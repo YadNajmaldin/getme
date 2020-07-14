@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main.css">
+    <meta charset="utf-8">
+    <title>GetMe</title>
+  </head>
+  <body>
+    <div class="logo">
+      <h1>GetMe</h1>
+    </div>
+    <div class="nav">
+      <nav>
+        <a href="/getme/new">Add Item</a>
+      </nav>
+    </div>
+    <div class="container">
+      <% for (let i =0; i < products.length; i++) { %>
+        
+          <div class="item">
+            <h3> <a href="/getme/<%=products[i].id %>">
+            <%= products[i].name; %> </a> </h3>
+            <div class="img">
+              <img src="<%=products[i].img;%>"> 
+            </div>
+              <h4> <%= products[i].description; %> </h4>
+              <h5> <%= products[i].price; %> </h5>
+              <h5> <%= products[i].qty; %> </h5>
+            </div>
+            <div class="delete">
+              <form action="/getme/<%= products[i].id %>?_method=DELETE" method="POST">
+              <input type="submit" value="DELETE"/>
+            </div>
+        
+
+      <% } %>
+
+    </div>
+  </body>
+</html>
+

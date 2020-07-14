@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/public/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Item</title>
+</head>
+<body>
+        <h2> <%=item.name %> </h2>
+        <img src="<%=item.img;%>">
+        <h2> <%=item.description %> </h2>
+        <h2> <%=item.price %> </h2>
+        <h2> <%=item.qty %> </h2>
+
+
+
+        
+        <nav>
+            <a href="/getme/">Back to Products</a>
+            <a href="/getme/<%=item.id %>/edit">edit</a>
+        
+        </nav>
+</body>
+</html>
