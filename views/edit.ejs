@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="/main.css">
         <meta charset="utf-8">
         <title></title>
     </head>
     <body>
       <header>
-        <img src="https://i.ibb.co/3R3G8vD/97255518-675426683190187-1591086019376054272-n.jpg">
+        <img src="https://i.ibb.co/Ks699xP/97255518-675426683190187-1591086019376054272-n.jpg">
         <nav>
             <ul>
                 <li><a href="/getme">Home</a></li>
@@ -16,22 +17,24 @@
             </ul>
         </nav>
     </header>
-      <h1>To edit item</h1>
-      <form action="/getme/<%=item.id%>?_method=PUT" method="POST">
-      
-
-        <input type="text" name="name" placeholder="Name" value="<%= item.name; %>"/></br>
-
-        <input type="text" name="img" placeholder="Image URL" value="<%= item.img; %>" /></br>
+    <div class="edit-item">
+      <h1>Edit item</h1>
         
-        <input type="text" name="description" placeholder="Description" value="<%= item.description; %>"></br>
-
-        <input type="number" name="price" placeholder="Price" value="<%= item.price; %>"></br>
-
-        <input type="number" name="qty" placeholder="QTY" value="<%= item.qty; %>"></br>
-
-        <input type="submit" value="edit item"></br>
-
-      </form>
+        <form action="/getme/<%=item.id%>?_method=PUT" method="POST">
+          
+          <input type="text" name="name" placeholder="Name" value="<%= item.name; %>"/></br>
+          
+          <input type="text" name="img" placeholder="Image URL" value="<%= item.img; %>" /></br>
+          
+          <input type="text" name="description" placeholder="Description" value="<%= item.description; %>"></br>
+          
+          <input type="number" name="price" placeholder="Price" value="<%= item.price; %>"></br>
+          
+          <input type="number" name="qty" placeholder="QTY" value="<%= item.qty; %>"></br>
+          
+          <input type="submit" value="edit"></br>
+          
+        </form>
+      </div>
     </body>
 </html>

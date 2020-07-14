@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/main.css">
         <meta charset="utf-8">
         <title></title>
     </head>
     <body>
       <header>
-        <img src="https://i.ibb.co/3R3G8vD/97255518-675426683190187-1591086019376054272-n.jpg">
+        <img src="https://i.ibb.co/Ks699xP/97255518-675426683190187-1591086019376054272-n.jpg">
         <nav>
             <ul>
                 <li><a href="/getme">Home</a></li>
@@ -16,21 +17,23 @@
             </ul>
         </nav>
     </header>
+    <div class="add-item">
       <h1>Add item to inventory</h1>
-      <form action="/getme" method="POST">
-
-        <input type="text" name="name" placeholder="Name"/></br>
-
-        <input type="text" name="img" placeholder="Image URL" /></br>
-        
-        <input type="text" name="description" placeholder="Description"></br>
-
-        <input type="number" name="price" placeholder="Price"></br>
-
-        <input type="number" name="qty" placeholder="QTY"></br>
-
-        <input type="submit" value="Create Item"></br>
-
-      </form>
+        <form action="/getme" method="POST">
+          
+          <input type="text" name="name" placeholder="Name"/></br>
+          
+          <input type="text" name="img" placeholder="Image URL" /></br>
+          
+          <input type="text" name="description" placeholder="Description"></br>
+          
+          <input type="number" name="price" placeholder="Price"></br>
+          
+          <input type="number" name="qty" placeholder="QTY"></br>
+          
+          <input type="submit" value="Create Item"></br>
+          
+        </form>
+      </div>
     </body>
 </html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,28 +9,27 @@
 </head>
 <body>
     <header>
-        <img src="https://i.ibb.co/3R3G8vD/97255518-675426683190187-1591086019376054272-n.jpg">
+        <img src="https://i.ibb.co/Ks699xP/97255518-675426683190187-1591086019376054272-n.jpg">
         <nav>
             <ul>
                 <li><a href="/getme">Home</a></li>
                 <li><a href="/getme/new">Add Item</a></li>
-              
+                <li><a href="/getme/<%=item.id %>/edit">edit</a></li>
             </ul>
         </nav>
     </header>
-        <h2> <%=item.name %> </h2>
-        <img src="<%=item.img;%>">
-        <h2> <%=item.description %> </h2>
-        <h2> <%=item.price %> </h2>
-        <h2> <%=item.qty %> </h2>
-
-
-
+    <main>
+        <div class="show-item">
+            <h2> <%=item.name %> </h2>
+            <img src="<%=item.img;%>">
+            <h3>Description: <%=item.description %>  </h3>
+            <h3>Price: $<%=item.price %> </h3>
+            <h3>QTY: <%=item.qty %> </h3>
+        </div>
         
+    </main>
         <nav>
-            <a href="/getme/">Back to Products</a>
-            <a href="/getme/<%=item.id %>/edit">edit</a>
-        
+            <a href="/getme/">Back to Products</a>        
         </nav>
 </body>
 </html>
