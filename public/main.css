@@ -1,3 +1,39 @@
 body {
-    background: yellow;
+    background: rgb(141, 197, 196);
+    background-size: cover;
+    font-family: 'Abel', sans-serif;
+    margin-top: 80px;
+    padding: 30px;
+}
+
+header {
+    background-color: rgb(155, 79, 81);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+}
+
+header li {
+    margin: 10px;
+}
+
+header * {
+    display: inline;
+}
+
+header img {
+height: 100px;
+width: 150px;
+margin-left: 30px;
 }
